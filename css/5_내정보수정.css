@@ -1,0 +1,146 @@
+a {
+  text-decoration-line: none;
+  color: #396b0b;
+  font-weight: bold;
+}
+
+body {
+    background: #e5e5e5;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pane2{
+    width: 360px;
+   
+    height: 640px;
+    background:url('https://mblogthumb-phinf.pstatic.net/MjAxODAzMTFfOSAg/MDAxNTIwNzE1NzE3NjI4.y_QwGKV-kEtog6M_ROz2J2FyZhFVF1Qe42_jftAFw_Ag.dT8gI-dJeOCwEzcHj7GxV0xZ1Nzybhh815BWuiaZL-8g.PNG.osy2201/35.png?type=w800://picsum.photos/1000/1500?image=827')  #ffffff;
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+}
+
+  form{
+    height: 100%;
+    
+}
+
+form h1{
+    color: #396b0b;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    font-size: 1.7em;
+}
+
+form h5{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    margin: 10px 20px;
+    border: none;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset input{
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #396b0b;
+    border-radius: 5em;
+    height: 20px;
+    width: 80%;
+    margin: 1px 0;
+    padding: 5px;
+    text-indent: 10px;
+    color: #396b0b;
+    font-weight: 600;
+}
+
+fieldset input::placeholder {
+    color: #396b0b;
+}
+
+
+fieldset input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5em;
+    margin: 9px 0;
+}
+.information {
+  margin-top: 70px;
+}
+
+.login_form{
+    position: relative;
+    bottom:0;
+    width: 61%;
+    height: 4em;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10em;
+    background: #396b0b;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: 1;
+    
+    
+    transition: background-color 0.2s , color 0.2s;
+}
+
+.pane2-switch button{
+    display: inline-block;
+    width: 85px;
+    height: 40px;
+    background: #396b0b;
+    margin: 10px 20px 50px 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    
+    transition: background-color 0.2s , color 0.2s , opacity 0.2s;
+}
+
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }

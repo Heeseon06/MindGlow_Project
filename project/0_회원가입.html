@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/0_회원가입.css">
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script>
+        function sample6_execDaumPostcode() {
+            new daum.Postcode({
+                oncomplete: function (data) {
+                    var addr = ''; // 주소 변수
+                    var extraAddr = ''; // 참고항목 변수
+
+                    //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                    if (data.userSelectedType === 'R') {
+                        addr = data.roadAddress;
+                    } else {
+                        addr = data.jibunAddress;
+                    }
+
+                    if (data.userSelectedType === 'R') {
+                        if (data.bname !== '' && /[동|로|가]$/g.test(data.bname)) {
+                            extraAddr += data.bname;
+                        }
+                        if (data.buildingName !== '' && data.apartment === 'Y') {
+                            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                        }
+                        if (extraAddr !== '') {
+                            extraAddr = ' (' + extraAddr + ')';
+                        }
+                        document.getElementById("sample6_extraAddress").value = extraAddr;
+
+                    } else {
+                        document.getElementById("sample6_extraAddress").value = '';
+                    }
+
+                    document.getElementById('sample6_postcode').value = data.zonecode;
+                    document.getElementById("sample6_address").value = addr;
+                    document.getElementById("sample6_detailAddress").focus();
+                }
+            }).open();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="panel shadow1">
+        <form action="/client/signup" name="regform" id="regform" method="post" style="overflow-y: scroll;"
+            onsubmit="return sendit()">
+            <div class="panel-switch">
+                <button type="button" id="client" class="">고객</button>
+                <button type="button" id="counselor" class="non-select">상담사</button>
+            </div>
+            <h1>회 원 가 입</h1>
+
+            <fieldset>
+                <input type="hidden" name="ssncheck" id="ssncheck" value="n">
+                <p>
+                    <input type="text" name="userid" id="userid" maxlength="20" placeholder="아이디" value="" required>
+                </p>
+                <p>
+                    <input type="password" name="userpw" id="userpw" maxlength="20" placeholder="비밀번호" value=""
+                        required>
+                </p>
+                <p>
+                    <input type="password" name="userpw_re" id="userpw_re" maxlength="20" placeholder="비밀번호 확인" required
+                        value="">
+                </p>
+                <p id="message"></p>
+
+                <p>
+                    <input type="text" name="name" id="name" maxlength="10" placeholder="이름" required value="">
+                </p>
+                <p>
+                    <input type="tel" name="hp" id="hp" maxlength="14" placeholder="휴대폰번호 (xxx-xxxx-xxxx)" required
+                        value="">
+                </p>
+                <p>
+                    <input type="text" name="email" id="email" maxlength="50" placeholder="이메일" value="">
+                </p>
+                <p>
+                    <input type="text" name="ssn1" id="ssn1" maxlength="6" class="ssn" placeholder="주민 앞자리" required
+                        value=""> - <input type="password" name="ssn2" id="ssn2" maxlength="7" class="ssn"
+                        placeholder="주민 뒷자리" required value="">
+                    <br>
+                    <button type="button" onclick="checkSSN()" id="checkbtn" class="verify">본인확인</button>
+                </p>
+
+                <div id="hidden">
+                    <p> ________________________</p>
+                    <h3>근무중인 상담센터 주소</h3>
+                    <p>
+                        <input type="text" name="zipcode" maxlength="5" id="sample6_postcode" placeholder="우편번호">
+                        <button type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" class="verify">우편번호
+                            찾기</button>
+                    </p>
+                    <p>
+                        <input type="text" name="address1" id="sample6_address" placeholder="주소">
+                    </p>
+                    <p>
+                        <input type="text" name="address2" id="sample6_detailAddress" placeholder="상세주소">
+                        <input type="text" name="address3" id="sample6_extraAddress" placeholder="참고항목">
+                    </p>
+                </div>
+            </fieldset>
+
+            <p>
+                <button type="submit" id="signup">가입하기</button>
+            </p>
+        </form>
+    </div>
+    <script src="../js/0_회원가입.js"></script>
+
+</body>
+
+</html>

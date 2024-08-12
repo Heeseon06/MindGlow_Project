@@ -1,0 +1,114 @@
+a {
+    text-decoration-line: none;
+    color: #396b0b;
+    font-weight: bold;
+}
+
+.main {
+    height: 1%;
+
+}
+
+.chatting_container {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+
+.walking {
+    width: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+}
+
+.next {
+    width: 15px;
+    font-size: 13px;
+    position: absolute;
+    margin: -60px 0 0 295px;
+    font-weight: bold;
+}
+
+.thinking {
+    width: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+}
+
+.reading {
+    width: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+}
+
+.gong {
+    width: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    float: left;
+}
+
+.middle {
+    background-color: #396b0b;
+    color: white;
+    height: 35px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    /* 수평 가운데 정렬 */
+    align-items: center;
+    /* 수직 가운데 정렬 */
+}
+
+.middle p {
+    text-align: center;
+    /* 텍스트 수평 가운데 정렬 */
+    margin: 0;
+    /* p 태그의 기본 마진 제거 */
+}
+
+button {
+    height: 70px;
+    width: 90%;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-color: #396b0b;
+    margin-bottom: 5px;
+
+    background-color: rgba(227, 240, 192, 0.7);
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #396b0b;
+    text-align: center;
+}
+
+h4 {
+    margin-right: 50px;
+    margin-top: 10px;
+
+}
+
+.chatting_container>p {
+    margin-right: 50px;
+}
+
+.program {
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: rgb(180, 178, 178);
+    opacity: 0.6;
+    border-radius: 20px;
+}

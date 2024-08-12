@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>알림</title>
+    <link rel="stylesheet" href="../css/1_알람.css">
+</head>
+
+<body>
+    <div class="phone"
+        style="width: 360px; height: 640px; position: relative; border: 1px solid black;">
+        <main id="main" style="width: 100%; height: 85%; overflow-y: auto;">
+
+            <div class="pane4">
+                <form class="diary-form">
+                    <a href="/path/1" id="click"><img src="../project_img/exit.png" alt="알림" id="exit"></a>
+                    <h3 class="alram">알림</h3>
+                    <div class="pane4-switch animated fadeIn">
+                        <button type="button" id="sign_up" class="memo"><img src="../project_img/letter.png"
+                                alt="letter" class="letter">05.30 장준용 상담사와 상담예약되었습니다.</button>
+                        <button type="button" id="log_in" class="memo"><img src="../project_img/letter.png" alt="letter"
+                                class="letter">장준용 상담사와 채팅이 연결되었습니다.</button>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+
+
+        <footer id="footer"
+            style="display: flex; flex-direction: column-reverse; width: 100%; height: 16%; border-top: 1px solid black;">
+            <div id="menu3" style="display: inline-block; width: 17%; height: 100%;">
+                <a href="/path/3"><img src="../project_img/menu3.PNG"
+                        style="width: 24%; position: absolute; margin-left: 10%; margin: -23% 0 0 36%; border-radius: 270px;"></a>
+            </div>
+            <div id="lower_menu" style="width: 100%; height: 85%; border-top: 1px solid black;">
+                <a href="/path/1">
+                    <div id="menu1" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../project_img/menu1.PNG" style="margin-left: 13%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -7%; font-size: 0.9em">홈
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/2">
+                    <div id="menu2" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../project_img/menu2.PNG" style="margin-top: 5%; margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 16% 0 0 -11%; font-size: 0.8em;">
+                            자가진단</p>
+                    </div>
+                </a>
+                <a href="/path/4">
+                    <div id="menu4" style="display: inline-block; width: 17%; height: 100%; margin-left: 25%;">
+                        <img src="../project_img/menu4.PNG" style="margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -12%; font-size: 0.8em;">
+                            상담관리
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/5">
+                    <div id="menu5" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../project_img/menu5.PNG" style="margin-left: 10%; margin-top: 20%; width: 75%;">
+                        <p style="position: absolute; margin: 3% 0 0 0; font-size: 0.7em;">마이페이지
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('click')
+            button.addEventListener('click', () => {
+                window.history.back(); // 뒤로 가기 기능
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="../css/0_로그인.css">
+    
+</head>
+
+<body>
+
+    <div class="panel shadow1">
+        <form action="/client/login" name="loginform" id="loginform" method="post">
+            <div class="panel-switch">
+                <button type="button" id="client" class="">고객</button>
+                <button type="button" id="counselor" class="non-select">상담사</button>
+            </div>
+            <h1>welcome!!</h1>
+
+            <fieldset>
+                <input id="userid" name="userid" type="textbox" required placeholder="아이디" value="">
+                <input id="userpw" class="login animated fadeInUp animate3" name="userpw" type="password" required placeholder="비밀번호" value="">
+            </fieldset>
+            <p id="error">아이디 또는 비번을 다시 확인해주세요.</p>
+
+            <p>
+                <button type="submit" id="login">로그인</button>
+            </p>
+            <p>
+                <button type="button" id="signup"><a href="./client/signup">회원가입</a></button>
+            </p>
+            
+        </form>
+    </div>
+
+    <script src="../js/0_로그인.js"></script>
+
+</body>
+
+</html>

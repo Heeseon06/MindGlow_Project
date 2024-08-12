@@ -1,0 +1,80 @@
+[
+    {
+        "centerName": "성매매피해지원상담소 이룸",
+        "oldAddress": "",
+        "newAddress": "서울특별시 동대문구 하정로3길 8-4201호 (신설동)",
+        "homepage": "",
+        "email": "",
+        "hp": "02-953-6280",
+        "gu": "동대문구",
+        "dong": "",
+        "lat": "",
+        "lot": "",
+        "kind": "6"
+    },
+    {
+        "centerName": "서울특별시다시함께상담센터",
+        "oldAddress": "",
+        "newAddress": "서울특별시 동작구 여의대방로54길 18서울여성플라자 4층",
+        "homepage": "",
+        "email": "",
+        "hp": "02-814-3660",
+        "gu": "동작구",
+        "dong": "",
+        "lat": "",
+        "lot": "",
+        "kind": "6"
+    },
+    {
+        "centerName": "여성인권상담소소냐의집",
+        "oldAddress": "",
+        "newAddress": "서울특별시 강동구 구천면로 2853층",
+        "homepage": "",
+        "email": "",
+        "hp": "02-474-0746",
+        "gu": "강동구",
+        "dong": "",
+        "lat": "",
+        "lot": "",
+        "kind": "6"
+    },
+    {
+        "centerName": "여성인권지원상담소 에이레네",
+        "oldAddress": "",
+        "newAddress": "서울특별시 동대문구 서울특별시립대로 482층 (전농동)",
+        "homepage": "",
+        "email": "",
+        "hp": "02-3394-7936",
+        "gu": "동대문구",
+        "dong": "",
+        "lat": "",
+        "lot": "",
+        "kind": "6"
+    },
+    {
+        "centerName": "성매매문제해결을위한전국연대 부설 여성인권센터<보다>",
+        "oldAddress": "",
+        "newAddress": "서울특별시 성북구 정릉로52길 8-9401호 (돈암동)",
+        "homepage": "",
+        "email": "",
+        "hp": "029820923",
+        "gu": "성북구",
+        "dong": "",
+        "lat": "",
+        "lot": "",
+        "kind": "6"
+    },
+    {
+        "centerName": "십대여성인권센터",
+        "oldAddress": "",
+        "newAddress": "서울특별시 영등포구 당산로38길 9-1, 6,7층 (당산동4가, 은혜빌딩)",
+        "homepage": "",
+        "email": "",
+        "hp": "0263481318",
+        "gu": "영등포구",
+        "dong": "",
+        "lat": "",
+        "lot": "",
+        "kind": "6"
+    }
+]

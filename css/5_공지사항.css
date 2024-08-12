@@ -1,0 +1,44 @@
+a {
+    text-decoration-line: none;
+    color: #396b0b;
+    font-weight: bold;
+}
+
+
+main {
+    background: #e5e5e5;
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.announcement{
+    width: 20%;
+    height: 15%;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 50px;
+    float: left;
+}
+
+form{
+    height: 100%;
+    padding: 2px;
+}
+
+main::-weblt-scrollbar{
+    display: none;
+}
+
+form h1{
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 70px 80px 40px 80px;
+    font-size: 1.7em;
+    
+}

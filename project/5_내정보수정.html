@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../css/5_내정보수정.css">
+
+</head>
+
+<body>
+    <div>
+        <div class="pane2">
+            <form action="../../" method="post" class="passwordfix-form" style="overflow-y: auto; " onsubmit="return sendit()">
+                <h1 class="information">내정보 수정</h1>
+                <fieldset id="login-fieldset">
+                    <h5 class="menu">기존 비밀번호</h5>
+                    <input class="login1 animated fadeInUp animate3" name="old_userpw" id="old_userpw" type="password"
+                        required placeholder="기존 비밀번호" value="">
+
+                    <h5 class="menu">새로운 비밀번호확인</h5>
+                    <input id="new_userpw" class="login1 animated fadeInUp animate5" name="new_userpw" type="password"
+                        required placeholder="새로운 비밀번호" value="">
+                    <h5 class="menu">새로운 비밀번호검사</h5>
+                    <input id="new_userpw_re" class="login1 animated fadeInUp animate5" name="new_userpw_re"
+                        type="password" required placeholder="비밀번호 확인" value="">
+                    <p id="message"></p>
+
+                    <h5 class="menu">전화번호</h5>
+                    <input id="hp" class="login1 animated fadeInUp animate3" name="hp" type="tel" required
+                        placeholder="수정할 전화번호" value="">
+
+                    <h5 class="menu">이메일</h5>
+                    <input id="email" class="login1 animated fadeInUp animate4" name="email" type="textbox"
+                        placeholder="변경할 이메일" value="">
+                </fieldset>
+                <button type="submit" id="login-form-submit" class="login_form button animated fadeInUp animate4"
+                    value="수정완료">수정완료</button>
+
+
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/5_내정보수정.js"></script>
+</body>
+
+</html>

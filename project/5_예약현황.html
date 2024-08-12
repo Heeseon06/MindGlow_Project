@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="../../css/5_예약현황.css">
+</head>
+
+<body>
+    <div class="phone"
+        style="width: 360px; height: 640px; position: relative; overflow: hidden; border: 1px solid black;">
+        <header id="header" style="width: 100%; height: 10%; border-bottom: 1px solid black;">
+            <a href="/path/alarm">
+                <div id="alram" style="display: inline-block; 
+            background-image: url(../../project_img/alram.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 10%;
+            height: 65%;
+            margin: 8px 0 0 8px;"></div>
+            </a>
+            <a href="/path/introduce">
+                <div id="upper_menu" style="display: inline-block;
+            margin-top: 7px;
+            margin-right: 3px;
+            float: right;
+            width: 13%;
+            height: 70%;
+            background-image: url(../../project_img/upper_menu.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;"></div>
+            </a>
+        </header>
+
+
+        <main id="main" style="width: 100%; height: 75%; overflow-y: scroll;">
+            <div class="pane4">
+                <form class="diary-form">
+                    <img src="../../project_img/bg.png" id="bg"
+                        style="width: 100%; height: 100%; position: absolute; top: 0%; border-radius: 254px; object-fit: cover; z-index: -9999; opacity: 0.7;">
+
+                    <img src="../../project_img/reserve.png" class="reserve" alt="공지">
+                    <h1 class="information">예약현황</h1>
+                    <div class="pane4-switch animated fadeIn">
+                        <button type="button" id="sign_up" class="active-button">03.10 장준용상담사님 상담완료</button>
+                        <button type="button" id="log_in" class="">03.19 박형건상담사님 상담완료</button>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+
+
+
+        <footer id="footer"
+            style="display: flex; flex-direction: column-reverse; width: 100%; height: 16%; border-top: 1px solid black;">
+            <div id="menu3" style="display: inline-block; width: 17%; height: 100%;">
+                <a href="/path/3"><img src="../../project_img/menu3.PNG"
+                        style="width: 24%; position: absolute; margin-left: 10%; margin: -23% 0 0 36%; border-radius: 270px;"></a>
+            </div>
+            <div id="lower_menu" style="width: 100%; height: 85%; border-top: 1px solid black;">
+                <a href="/path/1">
+                    <div id="menu1" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu1.PNG" style="margin-left: 13%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -7%; font-size: 0.9em">홈
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/2">
+                    <div id="menu2" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu2.PNG" style="margin-top: 5%; margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 16% 0 0 -11%; font-size: 0.8em;">
+                            자가진단</p>
+                    </div>
+                </a>
+                <a href="/path/4">
+                    <div id="menu4" style="display: inline-block; width: 17%; height: 100%; margin-left: 25%;">
+                        <img src="../../project_img/menu4.PNG" style="margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -12%; font-size: 0.8em;">
+                            상담관리
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/5">
+                    <div id="menu5" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu5.PNG" style="margin-left: 10%; margin-top: 20%; width: 75%;">
+                        <p style="position: absolute; margin: 3% 0 0 0; font-size: 0.7em;">마이페이지
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

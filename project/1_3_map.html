@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매핑</title>
+    <style>
+        a {
+            text-decoration-line: none;
+            color: #396b0b;
+            font-weight: bold;
+        }
+
+        .search {
+            padding: 10px;
+            background-color: #396b0b;
+        }
+
+        #cat_container {
+            text-align: center;
+            position: absoulte;
+            /* 화면의 고정된 위치에 배치 */
+            z-index: 9999;
+            /* 다른 요소들 위에 배치 */
+            background-color: rgba(255, 255, 255, 0.1);
+            /* 배경색 설정 */
+            padding: 3px 7px;
+            /* 여백 설정 */
+            border: 1px solid #ccc;
+            /* 테두리 설정 */
+            border-radius: 5px;
+            /* 모서리 둥글게 */
+            width: 34%;
+        }
+
+        #map {
+            position: absolute;
+        }
+
+        .category-menu {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            margin-top: 10px;
+            /* 버튼과 메뉴 사이의 간격 */
+            height: 50%;
+        }
+
+        .category-btn {
+            padding: 8px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            flex: 0 0 100px;
+            margin: 3px auto;
+            z-index: 1;
+        }
+
+        .category-btn.active {
+            background-color: gray;
+            /* 활성화된 버튼의 배경색 */
+            color: #fff;
+            /* 활성화된 버튼의 텍스트 색 */
+            z-index: 99;
+        }
+
+        .category-menu.hidden {
+            display: none;
+        }
+
+        #searchInput {
+            text-align: center;
+            width: 80%;
+            height: 60%;
+            border: none;
+            margin-top: 2%;
+            margin-left: 30px;
+            background-color: #396b0b;
+            font-size: 20px;
+            color: white;
+        }
+
+        #search {
+            visibility: hidden;
+        }
+    </style>
+    <script src="../js/1_3_kakao.js"></script>
+    <!-- <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=93fe91f9703244ec1348e78a5a418d68"></script> -->
+</head>
+
+<body>
+    <div class="phone"
+        style="width: 360px; height: 640px; background-color:white; position: relative; overflow: hidden; border: 1px solid black; z-index: 0;">
+        <header id="header" style="width: 100%; height: 10%; border-bottom: 1px solid black;">
+            <a href="/path/alarm">
+                <div id="alram" style="display: inline-block; 
+            background-image: url(../project_img/alram.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 10%;
+            height: 65%;
+            margin: 8px 0 0 8px;"></div>
+            </a>
+            <a href="/path/introduce">
+                <div id="upper_menu" style="display: inline-block;
+            margin-top: 7px;
+            margin-right: 3px;
+            float: right;
+            width: 13%;
+            height: 70%;
+            background-image: url(../project_img/upper_menu.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;"></div>
+            </a>
+        </header>
+
+        <main id="main" style="width: 100%; height: 75%;">
+            <div class="menu" style="background-color: #396b0b;
+            color: white;
+            height: 11%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center; /* 수평 가운데 정렬 */
+            align-items: center; /* 수직 가운데 정렬 */">
+                <div class="menu1" style="margin: 5px;
+                height: 75%;
+                width: 90%;
+                margin: 0 auto;
+                border-radius: 25px;
+                border : 1px solid white;">
+                    <input type='text' id='searchInput' placeholder='상담센터 검색'>
+                    <button id="search" onclick="searchLocation()">검색</button>
+                    <!-- 상담 테이터 가져와야함 -->
+                </div>
+
+            </div>
+
+            <body onload="initMap()" style="position: relative;">
+
+                <div id="map" style="width:100%;height:66.7%;"></div>
+                <!-- 카테고리 버튼 -->
+                <div style="display:flex;">
+                    <div id="cat_container">
+                        <button id="toggle-category-menu">카테고리</button>
+                        <div class="category-menu" id="categoryMenu" style="overflow-y: auto;">
+                            <button class="category-btn" data-category="1"
+                                data-icon="../project_img/marker/청소년.png">청소년</button>
+                            <button class="category-btn" data-category="2"
+                                data-icon="../project_img/marker/heart.png">정신건강</button>
+                            <button class="category-btn" data-category="3"
+                                data-icon="../project_img/marker/성.png">성고민</button>
+                            <button class="category-btn" data-category="4"
+                                data-icon="../project_img/marker/가정.png">가족</button>
+                            <button class="category-btn" data-category="5"
+                                data-icon="../project_img/marker/가정.png">가정</button>
+                            <button class="category-btn" data-category="6"
+                                data-icon="../project_img/marker/성.png">성폭력</button>
+                            <button class="category-btn" data-category="7"
+                                data-icon="../project_img/marker/garden.png">해바라기</button>
+                            <!-- 나머지 카테고리 버튼들도 유사하게 추가 -->
+                        </div>
+                    </div>
+                </div>
+                <script src="../js/1_3_map.js"></script>
+            </body>
+        </main>
+
+        <footer id="footer"
+            style="display: flex; flex-direction: column-reverse; width: 100%; height: 16%; border-top: 1px solid black;">
+            <div id="menu3" style="display: inline-block; width: 17%; height: 100%;">
+                <a href="/path/3"><img src="../project_img/menu3.PNG"
+                        style="width: 24%; position: absolute; margin-left: 10%; margin: -23% 0 0 36%; border-radius: 270px; z-index: 10;"></a>
+            </div>
+            <div id="lower_menu" style="width: 100%; height: 85%; border-top: 1px solid black;">
+                <a href="/path/1">
+                    <div id="menu1" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../project_img/menu1.PNG" style="margin-left: 13%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -7%; font-size: 0.9em">홈
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/2">
+                    <div id="menu2" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../project_img/menu2.PNG" style="margin-top: 5%; margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 16% 0 0 -11%; font-size: 0.8em;">
+                            자가진단</p>
+                    </div>
+                </a>
+                <a href="/path/4">
+                    <div id="menu4" style="display: inline-block; width: 17%; height: 100%; margin-left: 25%;">
+                        <img src="../project_img/menu4.PNG" style="margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -12%; font-size: 0.8em;">
+                            상담관리
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/5">
+                    <div id="menu5" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../project_img/menu5.PNG" style="margin-left: 10%; margin-top: 20%; width: 75%;">
+                        <p style="position: absolute; margin: 3% 0 0 0; font-size: 0.7em;">마이페이지
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅</title>
+    <script src="../../socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="../../css/3_채팅.css">
+</head>
+
+<body>
+    <div class="phone"
+        style="width: 360px; height: 640px; position: relative; overflow: hidden; border: 1px solid black;">
+        <header id="header" style="width: 100%; height: 10%; border-bottom: 1px solid black;">
+            <a href="/path/4">
+                <div id="alram" style="display: inline-block; 
+            background-image: url(../../project_img/back.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 10%;
+            height: 65%;
+            margin: 8px 0 0 8px;"></div>
+            </a>
+            <a href="/path/introduce">
+                <div id="upper_menu" style="display: inline-block;
+            margin-top: 7px;
+            margin-right: 3px;
+            float: right;
+            width: 13%;
+            height: 70%;
+            background-image: url(../../project_img/upper_menu.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;"></div>
+            </a>
+        </header>
+        <main id="main">
+            <div class="menu">
+                <div class="menu1">
+                    <h3>채팅</h3>
+                </div>
+            </div>
+            <div id="chat-container" class="chatBox">
+                <!-- 채팅 메시지가 여기에 추가됩니다 -->
+            </div>
+        </main>
+        <div id="footer">
+            <input type="text" id="message-input" placeholder="메시지를 입력하세요">
+            <button id="send-button">전송</button>
+        </div>
+    </div>
+    <script src="../../js/3_채팅.js"></script>
+</body>
+
+</html>

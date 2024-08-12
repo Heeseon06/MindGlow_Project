@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명상음악</title>
+    <style>
+        a {
+            text-decoration-line: none;
+            color: #396b0b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone"
+        style="width: 360px; height: 640px; position: relative; overflow: hidden; border: 1px solid black;">
+        <header id="header" style="width: 100%; height: 10%; border-bottom: 1px solid black;">
+            <a href="/path/alarm">
+                <div id="alram" style="display: inline-block; 
+            background-image: url(../../project_img/alram.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 10%;
+            height: 65%;
+            margin: 8px 0 0 8px;"></div>
+            </a>
+            <a href="/path/introduce">
+                <div id="upper_menu" style="display: inline-block;
+            margin-top: 7px;
+            margin-right: 3px;
+            float: right;
+            width: 13%;
+            height: 70%;
+            background-image: url(../../project_img/upper_menu.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;"></div>
+            </a>
+        </header>
+
+
+        <main id="main" style="width: 100%; height: 75%; overflow: hidden;">
+            <style>
+                .main {
+                    height: 1%;
+
+                }
+
+                .weather-container {
+                    width: 50%;
+                    height: 5%;
+                    display: inline-block;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px 10px;
+                    background-color: rgb(95, 60, 7);
+                    opacity: 0.6;
+                    float: left;
+                    border-radius: 15px;
+
+
+                }
+
+                .weather-container * {
+                    margin: 10px 10px;
+                    color: #faf6f5;
+                    font-size: 15px;
+                    text-align: center;
+                    margin-top: 1px;
+
+                }
+
+                .weatherIcon {
+                    width: 50px;
+                    height: 50px;
+                    display: inline-block;
+                    float: left;
+                }
+
+                .sentence-container {
+                    text-align: center;
+                    width: 41%;
+                    display: inline-block;
+                    font-size: 12px;
+                    background-color: rgb(95, 60, 7);
+                    opacity: 0.6;
+                    color: aliceblue;
+                    border-radius: 15px;
+                    height: 70px;
+                    margin-top: 10px;
+                    margin-bottom: 5px;
+                    letter-spacing: 0.5px;
+
+                }
+
+                .walk-container,
+                .meditation-container,
+                .book-container,
+                .gong-container {
+                    text-align: center;
+                }
+
+                .walk-container {
+                    width: 100%;
+                    display: inline-block;
+                }
+
+                .walking {
+                    width: 50px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    float: left;
+                }
+
+                .next {
+                    font-size: 17px;
+                    position: absolute;
+                    margin: -50px 0 0 300px;
+
+                }
+
+                .thinking {
+                    width: 50px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    float: left;
+                }
+
+                .reading {
+                    width: 50px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    float: left;
+                }
+
+                .gong {
+                    width: 50px;
+                    display: inline-block;
+                    margin-top: 10px;
+                    float: left;
+                }
+
+                .middle {
+                    background-color: rgb(73, 183, 162);
+                    color: white;
+                    height: 35px;
+                    width: 200px;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    /* 수평 가운데 정렬 */
+                    align-items: center;
+                    /* 수직 가운데 정렬 */
+                }
+
+                .middle p {
+                    text-align: center;
+                    /* 텍스트 수평 가운데 정렬 */
+                    margin: 0;
+                    /* p 태그의 기본 마진 제거 */
+                }
+
+                /* button {
+                    height: 70px;
+                    width: 90%;
+                    border-width: 1px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                    border-color: gainsboro;
+                    margin-bottom: 5px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    text-align: center;
+                    border-radius: 15px;
+                    
+                } */
+
+                iframe {
+                    height: 70px;
+                    width: 90%;
+                    border-radius: 15px;
+                    margin-bottom: 5px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+                }
+
+                h1 {
+                    color: #396b0b;
+                    text-align: center;
+                }
+
+                h4 {
+                    margin-right: 50px;
+                    margin-top: 10px;
+
+                }
+
+                .walk-container>p {
+                    margin-right: 50px;
+                }
+
+                .program {
+                    width: 90%;
+                    text-align: center;
+                    display: inline-block;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    background-color: rgb(180, 178, 178);
+                    opacity: 0.6;
+                    border-radius: 20px;
+                }
+            </style>
+            <h1>meditation music</h1>
+
+            <main id="main" style="width: 100%; height: 80%; overflow-y: scroll;">
+
+                <div class="walk-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RtPwBk0pqKE?si=WanGMnt7U0p2L-SQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="walk-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EsL7TErAQKc?si=-Lg4cFc7uYd7IuAI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="walk-container">
+                    <iframe src="https://www.youtube.com/embed/D_VXcXdMgU0?si=im4c4DbfCd0OldDk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="walk-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQWrleq-NhQ?si=Ews42DV9KIIF_YKy"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="walk-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u3papaX85MA?si=931Gx25hbt6NEDu1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </main>
+        </main>
+
+        <footer id="footer"
+            style="display: flex; flex-direction: column-reverse; width: 100%; height: 16%; border-top: 1px solid black;">
+            <div id="menu3" style="display: inline-block; width: 17%; height: 100%;">
+                <a href="/path/3"><img src="../../project_img/menu3.PNG"
+                        style="width: 24%; position: absolute; margin-left: 10%; margin: -23% 0 0 36%; border-radius: 270px;"></a>
+            </div>
+            <div id="lower_menu" style="width: 100%; height: 85%; border-top: 1px solid black;">
+                <a href="/path/1">
+                    <div id="menu1" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu1.PNG" style="margin-left: 13%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -7%; font-size: 0.9em">홈
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/2">
+                    <div id="menu2" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu2.PNG" style="margin-top: 5%; margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 16% 0 0 -11%; font-size: 0.8em;">
+                            자가진단</p>
+                    </div>
+                </a>
+                <a href="/path/4">
+                    <div id="menu4" style="display: inline-block; width: 17%; height: 100%; margin-left: 25%;">
+                        <img src="../../project_img/menu4.PNG" style="margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -12%; font-size: 0.8em;">
+                            상담관리
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/5">
+                    <div id="menu5" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu5.PNG" style="margin-left: 10%; margin-top: 20%; width: 75%;">
+                        <p style="position: absolute; margin: 3% 0 0 0; font-size: 0.7em;">마이페이지
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

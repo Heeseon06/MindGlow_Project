@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="../../css/5_공지사항.css">
+    <style>
+        a {
+            text-decoration-line: none;
+        }
+
+        .lili {
+            border: 1px solid gray;
+            border-radius: 10px;
+            background-color: rgb(205, 230, 211);
+            margin-top: 1px;
+            /* padding: 10px; */
+            text-align: left;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        button {
+            padding: 1px 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        .lili {
+            background-color: #e2ffe2;
+            border: 1px solid #B3AFAF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border: 1px solid #000;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 5px;
+        }
+
+        .lili strong {
+            font-weight: bold;
+        }
+
+        .lili span {
+            color: #666;
+        }
+
+        .lili hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 15px 0;
+        }
+
+        .lili:last-child {
+            margin-bottom: 50;
+        }
+
+        .lili .date {
+            font-size: 12px;
+        }
+
+        .small {
+            font-size: 10px;
+            margin-top: -10px;
+        }
+
+        .spaced {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone"
+        style="width: 360px; height: 640px; position: relative; overflow: hidden; border: 1px solid black;">
+        <header id="header" style="width: 100%; height: 10%; border-bottom: 1px solid black;">
+            <a href="/path/alarm">
+                <div id="alram" style="display: inline-block; 
+            background-image: url(../../project_img/alram.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 10%;
+            height: 65%;
+            margin: 8px 0 0 8px;"></div>
+            </a>
+            <a href="/path/introduce">
+                <div id="upper_menu" style="display: inline-block;
+            margin-top: 7px;
+            margin-right: 3px;
+            float: right;
+            width: 13%;
+            height: 70%;
+            background-image: url(../../project_img/upper_menu.PNG);
+            background-repeat: no-repeat;
+            background-size: contain;"></div>
+            </a>
+        </header>
+        <main id="main" style="width: 100%; height: 75%; overflow-y: auto;">
+            <div class="pane4">
+                <form class="diary-form">
+                    <img src="../../project_img/bg.png" id="bg"
+                        style="width: 100%; height: 100%; position: absolute; top: 0%; border-radius: 254px; object-fit: cover; z-index: -9999; opacity: 0.7;">
+                    <img src="../../project_img/announcement.png" class="announcement" alt="공지">
+                    <h1 class="information">공지사항</h1>
+                    <div class="pane4-switch animated fadeIn">
+                        <div class="au-task js-list-load">
+                            <div class="au-task-list js-scrollbar3" id="noticesForm">
+                                <!-- 공지사항 리스트가 여기에 표시됩니다 -->
+                            </div>
+                            <!-- <div class="au-task__footer">
+                                <button class="au-btn au-btn-load js-load-btn">load more</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer id="footer"
+            style="display: flex; flex-direction: column-reverse; width: 100%; height: 16%; border-top: 1px solid black;">
+            <div id="menu3" style="display: inline-block; width: 17%; height: 100%;">
+                <a href="/path/3"><img src="../../project_img/menu3.PNG"
+                        style="width: 24%; position: absolute; margin-left: 10%; margin: -23% 0 0 36%; border-radius: 270px;"></a>
+            </div>
+            <div id="lower_menu" style="width: 100%; height: 85%; border-top: 1px solid black;">
+                <a href="/path/1">
+                    <div id="menu1" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu1.PNG" style="margin-left: 13%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -7%; font-size: 0.9em">홈
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/2">
+                    <div id="menu2" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu2.PNG" style="margin-top: 5%; margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 16% 0 0 -11%; font-size: 0.8em;">
+                            자가진단</p>
+                    </div>
+                </a>
+                <a href="/path/4">
+                    <div id="menu4" style="display: inline-block; width: 17%; height: 100%; margin-left: 25%;">
+                        <img src="../../project_img/menu4.PNG" style="margin-left: 10%;">
+                        <p style="display: inline-block; position: absolute; margin: 13% 0 0 -12%; font-size: 0.8em;">
+                            상담관리
+                        </p>
+                    </div>
+                </a>
+                <a href="/path/5">
+                    <div id="menu5" style="display: inline-block; width: 17%; height: 100%;">
+                        <img src="../../project_img/menu5.PNG" style="margin-left: 10%; margin-top: 20%; width: 75%;">
+                        <p style="position: absolute; margin: 3% 0 0 0; font-size: 0.7em;">마이페이지
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function attachClickListeners() {
+    const notices = document.querySelectorAll('.lili');
+    notices.forEach(notice => {
+        notice.addEventListener('click', function () {
+            this.classList.toggle('expanded');
+            if (this.classList.contains('expanded')) {
+                this.style.height = 'auto';
+                this.style.overflow = 'visible';
+                this.style.whiteSpace = 'normal'; // 확장되는 상태에서는 줄 바꿈되도록 설정
+                this.style.textOverflow = 'unset';
+            } else {
+                this.style.height = '100px';
+                this.style.overflow = 'hidden';
+                this.style.whiteSpace = 'nowrap'; // 축소되는 상태에서는 줄 바꿈되지 않도록 설정
+                this.style.textOverflow = 'ellipsis';
+            }
+        });
+        if (!notice.classList.contains('expanded')) {
+            content.style.overflow = 'hidden';
+            content.style.textOverflow = 'ellipsis';
+        }
+    });
+}
+        function fetchData() {
+            fetch('../../notices/notice123', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // 기타 필요한 헤더 추가
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data.data)
+                    return data.data
+                }).then(data => {
+                    const noticeList = document.getElementById('noticesForm');
+                    console.log(typeof (data))
+                    data.forEach(notice => {
+                        // 새로운 li 요소를 생성합니다.
+                        const listItem = document.createElement('li');
+                        listItem.setAttribute('data-id', notice.id);
+                        // 삭제 버튼 생성
+                        const deleteButton = document.createElement('button');
+                        deleteButton.textContent = '삭제';
+                        deleteButton.addEventListener('click', () => deleteNotice(notice.id, listItem)); // 이 일기를 삭제하는 이벤트 리스너 연결
+                        // 시간 => 우리 시간으로 변경
+                        const utcDate = new Date(notice.createdAt)
+                        const koreanTimeOffset = 9 * 60 * 60 * 1000; // 9시간을 밀리초로 변환
+                        const koreanDate = new Date(utcDate.getTime() + koreanTimeOffset);
+                        let Kdate = koreanDate.toISOString()
+                        Kdate = Kdate.replace('T', ' ');
+                        let indexOfSecondColon = Kdate.indexOf(':', Kdate.indexOf(':') + 1);
+                        if (indexOfSecondColon !== -1) {
+                            Kdate = Kdate.substring(0, indexOfSecondColon);
+                        }
+                        // 각 데이터 항목의 내용을 li 요소에 추가합니다.
+                        listItem.innerHTML = `
+                <div class="lili expanded">
+                    <strong>작성자:</strong> 관리자<br>
+                    <strong>내용:</strong> ${notice.content}<br>
+                    <div class="spaced">
+                    <strong class="small">작성일:</strong> <span class="small">${Kdate}</span>
+                    </div>
+                </div>
+                `;
+                        // 삭제 버튼을 li 요소에 추가합니다.
+                        // listItem.appendChild(deleteButton);
+                        // 생성된 li 요소를 ul 요소에 추가합니다.
+                        noticeList.appendChild(listItem);
+                    });
+                    attachClickListeners();
+                })
+                .catch(error => {
+                    console.error('데이터를 불러오는 중 에러가 발생했습니다:', error);
+                });
+        }
+        // 공지 삭제 함수
+        function deleteNotice(notice, listItem) {
+            fetch('/notices/notice', {
+                method: 'DELETE'
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('삭제 요청이 실패했습니다.');
+                    }
+                    // Check if listItem is defined before attempting to remove it
+                    if (listItem) {
+                        listItem.remove();
+                        console.log('공지사항이 삭제되었습니다.');
+                    } else {
+                        console.error('삭제할 항목이 없습니다.');
+                    }
+                })
+                .catch(error => {
+                    console.error('삭제 중 에러가 발생했습니다:', error);
+                });
+        }
+        // document.addEventListener('DOMContentLoaded', fetchNotices);
+        window.onload = function () {
+            fetchData();
+        };
+        function draw() {
+        }
+    </script>
+</body>
+
+</html>

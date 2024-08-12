@@ -1,0 +1,21 @@
+a {
+    text-decoration-line: none;
+}
+.service >h1{
+    width: 50%;
+    text-align: center;
+    background-color: rgba(227, 240, 192, 0.7);
+    margin-left: 25%;
+}
+
+.sevice-form{
+    text-align: center;
+}
+.pane4{
+    text-align: center;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}

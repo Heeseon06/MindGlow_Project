@@ -1,0 +1,132 @@
+.panel{
+    width: 360px;
+    height: 640px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+form{
+    height: 100%;
+}
+p, h3 {
+    color: #396b0b;
+}
+
+.panel-switch{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.panel-switch button{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin: 20px 10px 30px 10px;
+    background: #396b0b;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+}
+.non-select {
+    opacity: 0.5;
+}
+
+button , .button {
+    cursor: pointer;
+}
+
+form h1{
+    color: #396b0b;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 20px 0;
+    font-size: 1.7em;
+}
+
+fieldset{
+    border: none;
+}
+fieldset input{
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #396b0b;
+    border-radius: 5em;
+    height: 20px;
+    width: 80%;
+    margin: 10px 0;
+    padding: 5px;
+    text-indent: 10px;
+    color: #396b0b;
+    font-weight: 600;
+}
+fieldset input::placeholder {
+    color: #396b0b;
+    opacity: 0.5;
+}
+fieldset input:focus {
+    border: 1px solid #396b0b;
+    border-radius: 5em;
+    margin: 9px 0;
+}
+
+#checkbtn {
+    margin-right: -60%;
+}
+.verify{
+    background: #a6ce81;
+    border: 1px solid black;
+    color: black;
+    border-radius: 7px;
+    padding: 3px 7px;
+    font-weight: bold;
+}
+
+#message {
+    text-align: left;
+    font-size: 0.5em;
+    margin-top: -2%;
+    margin-left: 12%;
+}
+
+.ssn{
+    width: 35%;
+}
+
+#hidden {
+    display: none;
+}
+
+#sample6_postcode{
+    width: 40%;
+    margin-right: 5%;
+}
+
+
+p , a{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #898787;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
+#signup {
+    position: relative;
+    width: 60%;
+    height: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 10em;
+    background: #396b0b;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5px;
+}

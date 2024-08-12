@@ -1,0 +1,75 @@
+a {
+    text-decoration-line: none;
+    color: #396b0b;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.pane4{
+    width: 100%;
+    height: 82%;
+    background-color:   rgba(227, 240, 192, 0.7);
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
+    
+}
+
+.diary_form{
+    position: relative;
+    bottom:0;
+    width: 70%;
+    height: 4em;
+    margin-top: 200px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 10em;
+    background: #533a02;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: 1;
+    
+    transition: background-color 0.2s , color 0.2s;
+}
+
+.write{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: #396b0b;
+    margin: 10px 10px 50px 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    margin-left: 35%;
+    
+    transition: background-color 0.2s , color 0.2s , opacity 0.2s;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+#userid {
+    display: none;
+}

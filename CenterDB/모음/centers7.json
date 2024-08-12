@@ -1,0 +1,80 @@
+[
+    {
+        "centerName": "서울동부해바라기센터",
+        "oldAddress": "서울특별시 송파구 가락동 58 국립경찰병원 1층",
+        "newAddress": "서울특별시 송파구 송이로 123 국립경찰병원 1층",
+        "homepage": "www.smonestop.or.kr",
+        "email": "seoulonestop@nph.go.kr",
+        "hp": "0234001700",
+        "gu": "송파구",
+        "dong": "가락동",
+        "lat": 37.49641457,
+        "lot": 127.1234875,
+        "kind": "7"
+    },
+    {
+        "centerName": "서울남부해바라기센터",
+        "oldAddress": "서울특별시 동작구 신대방동 425 보라매병원 희망관 2층",
+        "newAddress": "서울특별시 동작구 보라매로5길 20 보라매병원 희망관 2층",
+        "homepage": "www.smsonestop.or.kr",
+        "email": "bbh9566@hanmail.net",
+        "hp": "028701700",
+        "gu": "동작구",
+        "dong": "신대방동",
+        "lat": 37.49301375,
+        "lot": 126.9243325,
+        "kind": "7"
+    },
+    {
+        "centerName": "서울북부해바라기센터",
+        "oldAddress": "서울특별시 중랑구 신내동 315-1 신내동 의료안심주택 1층",
+        "newAddress": "서울특별시 중랑구 신내로 16길 33 신내의료안심주택 1층",
+        "homepage": "www.smcnonestop.or.kr",
+        "email": "subsunflower@naver.com",
+        "hp": "0234224101",
+        "gu": "중랑구",
+        "dong": "신내동",
+        "lat": 37.6141744,
+        "lot": 127.097663,
+        "kind": "7"
+    },
+    {
+        "centerName": "서울해바라기센터(아동)",
+        "oldAddress": "서울특별시 마포구 신수동 63-14 7층",
+        "newAddress": "서울특별시 마포구 백범로 23 구프라자 7층",
+        "homepage": "www.child1375.or.kr",
+        "email": "help@child1375.or.kr",
+        "hp": "0232741375",
+        "gu": "마포구",
+        "dong": "신수동",
+        "lat": 37.55243422,
+        "lot": 126.9375586,
+        "kind": "7"
+    },
+    {
+        "centerName": "서울해바라기센터(본관)",
+        "oldAddress": "서울특별시 종로구 연건동 28-21 서울대병원 함춘회관 지하1층",
+        "newAddress": "서울특별시 종로구 대학로 101 서울특별시대학교병원 함춘회관 지하 1층",
+        "homepage": "www.help0365.or.kr",
+        "email": "help@help0365.or.kr",
+        "hp": "0236720365",
+        "gu": "종로구",
+        "dong": "연건동",
+        "lat": 37.58045239,
+        "lot": 126.9971964,
+        "kind": "7"
+    },
+    {
+        "centerName": "서울해바라기센터(별관)",
+        "oldAddress": "서울특별시 종로구 동숭동 1-49 동숭빌딩 2층",
+        "newAddress": "서울특별시 종로구 대학로8가길 56 동숭빌딩 2층",
+        "homepage": "www.help0365.or.kr",
+        "email": "help@help0365.or.kr",
+        "hp": "027450366",
+        "gu": "종로구",
+        "dong": "동숭동",
+        "lat": 37.58300652,
+        "lot": 127.0028608,
+        "kind": "7"
+    }
+]
