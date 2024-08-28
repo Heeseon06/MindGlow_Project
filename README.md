@@ -15,12 +15,25 @@
 
 
 # 포트폴리오
-![MindGlow_시연회_최종_page-0001](https://github.com/user-attachments/assets/f22c54ea-d68f-4262-835f-32c0e8bbf3b1)
+![MindWhisper_MindGlow_상세기획서-이미지-0](https://github.com/user-attachments/assets/5ab22168-d8f6-4dc9-9bd0-0a9a998a5594)
 
 <details>
   <summary>펼치기/접기</summary>
- 
-<!-- ![MindGlow_시연회_최종_page-0001](https://github.com/user-attachments/assets/7db99ba6-0b5f-4614-970b-66b7e6da15fa) -->
+
+<!-- ![MindWhisper_MindGlow_상세기획서-이미지-0](https://github.com/user-attachments/assets/5ab22168-d8f6-4dc9-9bd0-0a9a998a5594) -->
+![MindWhisper_MindGlow_상세기획서-이미지-1](https://github.com/user-attachments/assets/df4d677d-cbf6-4d0c-800d-0b06b2099794)
+![MindWhisper_MindGlow_상세기획서-이미지-2](https://github.com/user-attachments/assets/f1b9dc36-3260-4a95-97e4-1cf6ccd51fb1)
+![MindWhisper_MindGlow_상세기획서-이미지-3](https://github.com/user-attachments/assets/05b9f834-8c07-4e92-9f95-8e3d20ed8f56)
+![MindWhisper_MindGlow_상세기획서-이미지-4](https://github.com/user-attachments/assets/1eacf6d0-eba2-4f9c-b0a3-3216426bf2e8)
+![MindWhisper_MindGlow_상세기획서-이미지-5](https://github.com/user-attachments/assets/d3260001-5a95-4cca-90d8-1779e50ddada)
+![MindWhisper_MindGlow_상세기획서-이미지-6](https://github.com/user-attachments/assets/627fe7a8-4f2a-45cf-b14c-75009c7eea42)
+![MindWhisper_MindGlow_상세기획서-이미지-7](https://github.com/user-attachments/assets/51287594-d756-4c5c-9ad4-7ae243dc57f9)
+![MindWhisper_MindGlow_상세기획서-이미지-8](https://github.com/user-attachments/assets/4611e58f-772c-4b37-9d4a-595d04e4d928)
+![MindWhisper_MindGlow_상세기획서-이미지-9](https://github.com/user-attachments/assets/564d4fe3-0108-4cbb-b6c3-2901ce6c3b07)
+![MindWhisper_MindGlow_상세기획서-이미지-10](https://github.com/user-attachments/assets/2cf722ab-a30b-45d5-8d3f-281ee48741cb)
+
+<!-- 
+![MindGlow_시연회_최종_page-0001](https://github.com/user-attachments/assets/7db99ba6-0b5f-4614-970b-66b7e6da15fa)
 ![MindGlow_시연회_최종_page-0002](https://github.com/user-attachments/assets/71cb0119-d24c-4ced-bc63-922bab6b9d0a)
 ![MindGlow_시연회_최종_page-0003](https://github.com/user-attachments/assets/73398c7d-7119-4d13-b99d-7026d6bc8114)
 ![MindGlow_시연회_최종_page-0004](https://github.com/user-attachments/assets/cedd0e63-5f16-43ef-83d3-4487250a68a5)
@@ -43,7 +56,9 @@
 ![MindGlow_시연회_최종_page-0021](https://github.com/user-attachments/assets/3fea969c-f19c-43db-a89f-ad97d07de774)
 ![MindGlow_시연회_최종_page-0022](https://github.com/user-attachments/assets/c071947f-ee76-40c2-80c6-4b08d40a0aab)
 ![MindGlow_시연회_최종_page-0023](https://github.com/user-attachments/assets/d2a78683-6dfe-4256-9adc-d10f60158b55)
-![MindGlow_시연회_최종_page-0024](https://github.com/user-attachments/assets/efbfce9b-92d7-44bf-af01-3381087b9fef)
+![MindGlow_시연회_최종_page-0024](https://github.com/user-attachments/assets/efbfce9b-92d7-44bf-af01-3381087b9fef) 
+-->
+
  
  </details>
 
@@ -107,6 +122,6 @@ npm start
 # 작성자의 기여
 
 * 기획, 디자인
-* 일기장
-* 채팅 
-* 추가해서 작성 중 ing
+* 일기장 페이지
+* 채팅 페이지
+
